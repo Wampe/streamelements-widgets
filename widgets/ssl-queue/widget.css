@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  transform: rotate(-1deg);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  
+  margin: 8px;
+}
+
+.header-template-first-row {
+  background-color: rgb(6, 186, 168); 
+  padding: 4px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px #000000;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.header-template-second-row {
+  background-color: rgb(8, 236, 213);
+  padding: 4px;
+  margin-left: 8px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+.queue-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 8px;
+}
+
+.queue-spacer {
+  margin: 8px;
+  color: white;
+  text-shadow: 1px 1px #000000;
+}
+
+.queue-list {
+  display: flex;
+  flex-direction: {{listOrientation}};
+  align-items: flex-start;
+}
+
+.queue-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  margin: 4px;
+}
+
+.queue-emote {
+  position: absolute;
+  top: 24px;
+  left: -8px;
+  height: 50%;
+}
+
+.queue-template-first-row {
+  background-color: rgb(6, 186, 168); 
+  padding: 4px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px #000000;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.queue-template-second-row {
+  background-color: rgb(8, 236, 213);
+  padding: 4px;
+  margin-left: 16px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+.queue-empty {
+  background-color: rgb(6, 186, 168); 
+  padding: 4px;
+  margin: 4px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: 1px 1px #000000;
+  color: white;
+}
+
+.header-info-highlight {
+  font-weight: bold;
+}

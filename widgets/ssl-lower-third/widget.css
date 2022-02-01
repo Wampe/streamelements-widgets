@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.visible {
+  opacity: 1.0;
+}
+
+.hidden {
+  opacity: 0.0;
+}
+
+.top-label {
+  margin-left: -8px;
+  padding: 3px 4px 4px 4px;
+
+  font-size: 14px;
+  color: rgb(8, 236, 213);
+  background-color: #000000;
+
+  transform: rotate(-1deg);
+}
+
+.current-song {
+  padding: 4px;
+  background-color: rgb(6, 186, 168); 
+
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.requested-by {
+  padding: 4px;
+  background-color: rgb(8, 236, 213);
+  margin-left: 24px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+.requested-by-label {
+  font-size: 14px;
+}
+
+.requester-name {
+  font-weight: 700;
+}
+
+.queue-info {
+  margin-top: 8px;
+  padding: 4px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+.queue-open {
+  color: rgb(8, 236, 213);
+}
+
+.queue-closed {
+  color: rgb(255, 128, 128);
+}
+
+.info-highlight {
+  color: rgb(8, 236, 213);
+}
+
+.queue-emote {
+  position: absolute;
+  top: 46px;
+  left: -8px;
+  height: 32%;
+}

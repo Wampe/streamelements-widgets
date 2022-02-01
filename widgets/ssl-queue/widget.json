@@ -1,0 +1,79 @@
+{
+  "listOrientation": {
+    "type": "dropdown",
+    "label": "Orientation:",
+    "value": "column",
+    "options": {
+      "column": "Vertical",
+      "row": "Horizontal"
+    }
+  },
+  "queueLimit": {
+    "type": "slider",
+    "label": "Limit displayed songs in queue",
+    "value": 5,
+    "min": 1,
+    "max": 10,
+    "step": 1
+  },
+  "queueSpacerText": {
+    "type": "text",
+    "label": "Spacer Text",
+    "value": "NEXT:"
+  },
+  "emptyQueueVisibilty": {
+    "type": "dropdown",
+    "label": "Empty Queue Visibility",
+    "value": "visible",
+    "options": {
+      "visible": "Visible",
+      "collapsed": "Collapsed"
+    }
+  },
+  "queueEmptyText": {
+    "type": "text",
+    "label": "Queue is Empty Text",
+    "value": "Queue is empty"
+  },
+  "headerTemplateFirstRow": {
+    "type": "text",
+    "label": "Header Template First Row",
+    "value": "Song request is {requestsStatus}"
+  },
+  "headerTemplateSecondRow": {
+    "type": "text",
+    "label": "Header Template Second Row",
+    "value": "{queueCount} {songCaption} in queue and {availableSlots} {slotCaption} available."
+  },
+  "headerVisibilty": {
+    "type": "dropdown",
+    "label": "Header Visibility",
+    "value": "visible",
+    "options": {
+      "visible": "Visible",
+      "collapsed": "Collapsed"
+    }
+  },
+  "queueTemplateFirstRow": {
+    "type": "text",
+    "label": "Queue Template First Row",
+    "value": "{songArtist}"
+  },
+  "queueTemplateSecondRow": {
+    "type": "text",
+    "label": "Queue Template Second Row",
+    "value": "{songTitle}"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "SSL Queue"
+  },
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "Wampe"
+  },
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "1.0"
+  }
+}
