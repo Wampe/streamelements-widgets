@@ -50,14 +50,14 @@
   animation: fade-in 0.2s;
   animation-fill-mode: forwards;
   
-  background-color: rgb(6, 186, 168); 
+  background-color: #7e7ef3;
 
   padding: 4px;
   padding-right: 32px;
   
   font-weight: 400;
   font-size: 16px;
-  color: white;
+  color: #f7f7fa;
   text-shadow: 1px 1px #000000;
   white-space: nowrap; 
   overflow: hidden;
@@ -68,14 +68,14 @@
   animation: fade-in 0.2s;
   animation-fill-mode: forwards;
 
-  background-color: rgb(8, 236, 213);
+  background-color: #5b5bf0;
   
   padding: 4px;
   margin-left: 12px;
 
   font-size: 14px;
   font-weight: 400;
-  color: black;
+  color: #f7f7fa;
   white-space: nowrap; 
   overflow: hidden;
 }
@@ -85,7 +85,7 @@
   display: inline-block;
   position: absolute;
 
-  background-color: rgb(8, 236, 213);
+  background-color: #5b5bf0;
 
   width: 24px;
   height: 24px;

@@ -22,12 +22,12 @@
 }
 
 .header-template-first-row {
-  background-color: rgb(6, 186, 168); 
+  background-color: #7e7ef3; 
   padding: 4px;
 
   font-weight: 400;
   font-size: 16px;
-  color: white;
+  color: #f7f7fa;
   text-shadow: 1px 1px #000000;
   white-space: nowrap; 
   overflow: hidden;
@@ -35,13 +35,13 @@
 }
 
 .header-template-second-row {
-  background-color: rgb(8, 236, 213);
+  background-color: #5b5bf0;
   padding: 4px;
   margin-left: 8px;
 
   font-size: 14px;
   font-weight: 400;
-  color: black;
+  color: #f7f7fa;
   white-space: nowrap; 
   overflow: hidden;
 }
@@ -54,7 +54,7 @@
 
 .queue-spacer {
   margin: 8px;
-  color: white;
+  color: #f7f7fa;
   text-shadow: 1px 1px #000000;
 }
 
@@ -81,12 +81,12 @@
 }
 
 .queue-template-first-row {
-  background-color: rgb(6, 186, 168); 
+  background-color: #7e7ef3; 
   padding: 4px;
 
   font-weight: 400;
   font-size: 16px;
-  color: white;
+  color: #f7f7fa;
   text-shadow: 1px 1px #000000;
   white-space: nowrap; 
   overflow: hidden;
@@ -94,26 +94,26 @@
 }
 
 .queue-template-second-row {
-  background-color: rgb(8, 236, 213);
+  background-color: #5b5bf0;
   padding: 4px;
   margin-left: 16px;
 
   font-size: 14px;
   font-weight: 400;
-  color: black;
+  color: #f7f7fa;
   white-space: nowrap; 
   overflow: hidden;
 }
 
 .queue-empty {
-  background-color: rgb(6, 186, 168); 
+  background-color: #7e7ef3; 
   padding: 4px;
   margin: 4px;
 
   font-size: 16px;
   font-weight: 700;
   text-shadow: 1px 1px #000000;
-  color: white;
+  color: #f7f7fa;
 }
 
 .header-info-highlight {

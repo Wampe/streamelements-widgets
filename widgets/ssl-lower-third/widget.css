@@ -24,19 +24,19 @@
   padding: 3px 4px 4px 4px;
 
   font-size: 14px;
-  color: rgb(8, 236, 213);
-  background-color: #000000;
+  color: #4d4b93;
+  background-color: #f7f7fa;
 
   transform: rotate(-1deg);
 }
 
 .current-song {
   padding: 4px;
-  background-color: rgb(6, 186, 168); 
+  background-color: #7e7ef3; 
 
   font-weight: 700;
   font-size: 18px;
-  color: #ffffff;
+  color: #f7f7fa;
   text-shadow: 1px 1px #000000;
   white-space: nowrap; 
   overflow: hidden;
@@ -45,12 +45,12 @@
 
 .requested-by {
   padding: 4px;
-  background-color: rgb(8, 236, 213);
+  background-color: #5b5bf0;
   margin-left: 24px;
 
   font-size: 14px;
   font-weight: 400;
-  color: black;
+  color: #f7f7fa;
   white-space: nowrap; 
   overflow: hidden;
 }
@@ -69,14 +69,14 @@
 
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color: #f7f7fa;
   text-shadow: 1px 1px #000000;
   white-space: nowrap; 
   overflow: hidden;
 }
 
 .queue-open {
-  color: rgb(8, 236, 213);
+  color: #7e7ef3;
 }
 
 .queue-closed {
@@ -84,7 +84,7 @@
 }
 
 .info-highlight {
-  color: rgb(8, 236, 213);
+  color: #7e7ef3;
 }
 
 .queue-emote {
