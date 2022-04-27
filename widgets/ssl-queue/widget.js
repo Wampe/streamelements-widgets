@@ -134,9 +134,15 @@ const getStreamer = () => {
 }
 
 const wrapSong = (text, item) => {
-  return text
+  if (item.song) {
+    return text
     .replace("{songArtist}", item.song.artist)
     .replace("{songTitle}", item.song.title);
+  } 
+
+  return text
+    .replace("{songArtist}", 'YouTube')
+    .replace("{songTitle}", item.nonlistSong);
 }
 
 const wrapText = (text) => {

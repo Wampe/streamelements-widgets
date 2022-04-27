@@ -120,9 +120,12 @@ function addEvent(type, text, username) {
     totalEvents += 1;
     const element = `
         <div class="event-container" id="event-${totalEvents}">
-            <div class="username-container">${username}</div>
-            <div class="details-container">${text}</div>
-            <div class="event-image event-${type}"></div>
+            <div class="event-container-background"></div>
+            <div class="event-container-content">
+                <div class="username-container">${username}</div>
+                <div class="details-container">${text}</div>
+                <div class="event-image event-${type}"></div>
+            </div>
         </div>`;
     
     $('.main-container').show().prepend(element);

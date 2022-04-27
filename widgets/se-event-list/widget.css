@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/d-din?styles=37959,37957');
 
 * {
-  font-family: 'Roboto';
-  overflow: hidden;
+  font-family: 'D-DIN', sans-serif;
 }
 
 @keyframes slide-in {
@@ -31,27 +30,53 @@
 }
 
 .event-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  animation: fade-in 0.2s;
+  animation-fill-mode: forwards;
 
   animation: slide-in 1s;
   animation-fill-mode: forwards;
 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
   width: 0px;
   max-width: 240px;
   
-  margin: 4px;
+  margin: 8px;
+}
 
-  transform: rotate(-1deg);
+.event-container-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  background: #eeeeee;
+  border: 2px solid #bbbbbb;
+  border-radius: 8px;
+
+  transform: rotate(-3deg);
+}
+
+.event-container-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  margin: 2px;
+  
+  border: 2px solid #bbbbbb;
+  border-radius: 8px;
+
+  background: url('https://i.ibb.co/NTdpcMQ/stripes.png') repeat,
+              linear-gradient(0deg, rgba(91,91,240,1) 50%, rgba(126,126,243,1) 50%);
+  background-blend-mode: soft-light;
 }
 
 .username-container {
-  animation: fade-in 0.2s;
-  animation-fill-mode: forwards;
-  
-  background-color: #7e7ef3;
-
   padding: 4px;
   padding-right: 32px;
   
@@ -65,17 +90,12 @@
 }
 
 .details-container {
-  animation: fade-in 0.2s;
-  animation-fill-mode: forwards;
-
-  background-color: #5b5bf0;
-  
   padding: 4px;
-  margin-left: 12px;
 
   font-size: 14px;
   font-weight: 400;
   color: #f7f7fa;
+  text-shadow: 1px 1px #000000;
   white-space: nowrap; 
   overflow: hidden;
 }
@@ -85,13 +105,13 @@
   display: inline-block;
   position: absolute;
 
-  background-color: #5b5bf0;
+  background-color: #eeeeee;
 
   width: 24px;
   height: 24px;
   
   right: 4px;
-  top: 8px;
+  top: 4px;
 
   -webkit-mask-size: cover;
   mask-size: cover;

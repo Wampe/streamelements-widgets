@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/d-din?styles=37959,37957');
 
 * {
-  font-family: 'Roboto', sans-serif;
-}
-
-.main-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  font-family: 'D-DIN', sans-serif;
 }
 
 .visible {
@@ -19,20 +12,67 @@
   opacity: 0.0;
 }
 
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 32px;
+}
+
+.song-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  background: #eeeeee;
+  border: 2px solid #bbbbbb;
+  border-radius: 8px;
+
+  transform: rotate(-3deg);
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  margin: 2px;
+  
+  border: 2px solid #bbbbbb;
+  border-radius: 8px;
+
+  background: url('https://i.ibb.co/NTdpcMQ/stripes.png') repeat,
+              linear-gradient(0deg, rgba(91,91,240,1) 50%, rgba(126,126,243,1) 50%);
+  background-blend-mode: soft-light;
+}
+
 .top-label {
   margin-left: -8px;
   padding: 3px 4px 4px 4px;
 
   font-size: 14px;
-  color: #4d4b93;
-  background-color: #f7f7fa;
+  color: #000000;
 
   transform: rotate(-1deg);
+
+  background: #eeeeee;
+  border: 2px solid #bbbbbb;
+  border-radius: 8px;
 }
 
 .current-song {
-  padding: 4px;
-  background-color: #7e7ef3; 
+  padding: 4px 8px;
 
   font-weight: 700;
   font-size: 18px;
@@ -44,13 +84,13 @@
 }
 
 .requested-by {
-  padding: 4px;
-  background-color: #5b5bf0;
-  margin-left: 24px;
+  padding: 4px 8px;
+  margin-left: 32px;
 
   font-size: 14px;
   font-weight: 400;
   color: #f7f7fa;
+  text-shadow: 1px 1px #000000;
   white-space: nowrap; 
   overflow: hidden;
 }
@@ -77,19 +117,22 @@
 
 .queue-open {
   color: #7e7ef3;
+  font-weight: 700;
 }
 
 .queue-closed {
   color: rgb(255, 128, 128);
+  font-weight: 700;
 }
 
 .info-highlight {
   color: #7e7ef3;
+  font-weight: 700;
 }
 
 .queue-emote {
   position: absolute;
-  top: 46px;
-  left: -8px;
-  height: 32%;
+  top: 56px;
+  left: 8px;
+  height: 32px;
 }

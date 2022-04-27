@@ -7,6 +7,7 @@ let client,
     maxRequests = 0;
     availableSlots = 0;
 
+    songContainer = $('.song-container'), 
     livePractice = $('.top-label'),
     currentSong = $('.current-song'),
     requestedBy = $('.requested-by'),
@@ -66,25 +67,34 @@ function getQueue() {
       }
 
       if (queueCount > 0) {
-        if (data.list[0].song.attributeIds.some(id => id === 23951)) {
+        
+
+        if (data.list[0].song && data.list[0].song.attributeIds.some(id => id === 23951)) {
           livePractice.text(`Live Practice`);
+          livePractice.removeClass('hidden').addClass('visible');
+        } else if (data.list[0].nonlistSong) {
+          livePractice.text(`Live Practice (YouTube)`);
           livePractice.removeClass('hidden').addClass('visible');
         } else {
           livePractice.removeClass('visible').addClass('hidden');
         }
 
-        currentSong.removeClass('hidden').addClass('visible');
-        requestedBy.removeClass('hidden').addClass('visible');
+        songContainer.removeClass('hidden').addClass('visible');
+        
+        if (data.list[0].song) {
+          currentSong.html(`${data.list[0].song.artist} - ${data.list[0].song.title}`);
+        } else {
+          currentSong.html(`${data.list[0].nonlistSong}`);
+        }
 
-        currentSong.html(`${data.list[0].song.artist} - ${data.list[0].song.title}`);
         requestedBy.html(`
           <span class="requested-by-label">Requested by</span>: 
           <span class="requester-name">${data.list[0].requests[0].name}</span>
         `);
+        
       } else {
+        songContainer.removeClass('visible').addClass('hidden');
         livePractice.removeClass('visible').addClass('hidden');
-        currentSong.removeClass('visible').addClass('hidden');
-        requestedBy.removeClass('visible').addClass('hidden');
       }
 
       if (localRequestStatus === 'open') {
